@@ -19,3 +19,40 @@ A folder env is created in the repository
 ```
   source env/bin/activate
 ```
+
+# Django
+## Install Django
+1. install the Django packages
+```
+  pip install django
+```
+2. save the dependancies in a requierementS.txt file
+```
+  pip freeze > requirements.txt
+```
+
+## Django Project
+### Start a project
+```
+  django-admin startproject merchex
+```
+
+### Launch the development server
+```
+  python manage.py runserver
+```
+To consult the server go to : http://127.0.0.1:8000/
+
+### Create a database 
+```
+  python manage.py migrate
+```
+The database is save in the db.sqlite3 file
+
+### Create an application
+In Django an application is a sub-section of the project
+```
+  python manage.py startapp application_name
+```
+
+
