@@ -51,8 +51,15 @@ The database is save in the db.sqlite3 file
 
 ### Create an application
 In Django an application is a sub-section of the project
+
+1. create the file of the application :
 ```
   python manage.py startapp application_name
 ```
+2. install the application in the project
+-> project_sub-folder/settings.py
+add the application name at the end of INSTALLED_APPS
+![image](https://github.com/user-attachments/assets/09b552b1-bddf-4c33-8e28-bafece0463bb)
+
 
 
