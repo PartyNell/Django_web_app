@@ -61,5 +61,23 @@ In Django an application is a sub-section of the project
 add the application name at the end of INSTALLED_APPS
 ![image](https://github.com/user-attachments/assets/09b552b1-bddf-4c33-8e28-bafece0463bb)
 
+### Add a view
+1. Add a view function in the file *application*/views.py
+```
+from Django.http import HttpTResponse
+
+def view_name(request):
+  return   HttpResponse("html modele")
+```
+2. add thelink between the URL and the view in *project*/urls.py
+```
+from application import views
+
+urlpatterns = [
+  ...
+  path('url/', views.view_name),
+}
+```
+
 
 
